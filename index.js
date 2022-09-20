@@ -45,12 +45,12 @@ window.onload=()=>{
         //scaling the canvas
         ctx.scale(factorValue, factorValue);
         //Drawing the text
-        ctx.fillText("HTML", 50,60);
+        ctx.fillText("CSS", 50,60);
         ctx
         ctx.translate(0, offsetY);
 
         //Setting a color value of the shield
-        ctx.fillStyle = '#E34C26';
+        ctx.fillStyle = '#264DE4';
         //Start the shape drawing
         ctx.beginPath();
         //Drawing the shield
@@ -66,7 +66,7 @@ window.onload=()=>{
         ctx.font = fontFamily;
 
         //The lighter half of the shield
-        ctx.fillStyle = '#F06529';
+        ctx.fillStyle = '#2965F1';
         ctx.beginPath();
         ctx.moveTo(139,257);
         ctx.lineTo(220,234);
