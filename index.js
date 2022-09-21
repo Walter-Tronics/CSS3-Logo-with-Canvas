@@ -1,6 +1,6 @@
 window.onload=()=>{
 
-    let ctx,
+    let $,
     //selecting the slider element
     slider = document.getElementById('slide'),
     //setting a factorValue
@@ -10,14 +10,14 @@ window.onload=()=>{
 
 
     //Inintializing the canvas
-    init();
+    _();
 
-    function init(){
-        ctx = document.getElementById("canvas").getContext("2d");
+    function _(){
+        $ = document.getElementById("canvas").getContext("2d");
         //Setting the font family
-        ctx.font = fontFamily;
+        $.font = fontFamily;
         //Saving the context
-        ctx.save();
+        $.save();
         //Calling the draw function
         drawLogo();
     }
@@ -37,116 +37,115 @@ window.onload=()=>{
         //giving an offset to the shield
         var offsetY = 80;
         //Recall the saved context
-        ctx.restore();
+        $.restore();
         //saving the context
-        ctx.save();
+        $.save();
         //clearing the canvas
-        ctx.clearRect(0, 0, 280, 400);
+        $.clearRect(0, 0, 280, 400);
         //scaling the canvas
-        ctx.scale(factorValue, factorValue);
+        $.scale(factorValue, factorValue);
         //Drawing the text
-        ctx.fillText("CSS", 50,60);
-        ctx
-        ctx.translate(0, offsetY);
+        $.fillText("CSS", 70,60);
+        $
+        $.translate(0, offsetY);
 
         //Setting a color value of the shield
-        ctx.fillStyle = '#264DE4';
+        $.fillStyle = '#264DE4';
         //Start the shape drawing
-        ctx.beginPath();
+        $.beginPath();
         //Drawing the shield
-        ctx.moveTo(39,250);
-        ctx.lineTo(17,0);
-        ctx.lineTo(262,0);
-        ctx.lineTo(239,250);
-        ctx.lineTo(139,278);
-        ctx.closePath();
+        $.moveTo(39,250);
+        $.lineTo(17,0);
+        $.lineTo(262,0);
+        $.lineTo(239,250);
+        $.lineTo(139,278);
+        $.closePath();
         //Filling the shape with the color
-        ctx.fill();
+        $.fill();
         //calling a font family
-        ctx.font = fontFamily;
+        $.font = fontFamily;
 
         //The lighter half of the shield
-        ctx.fillStyle = '#2965F1';
-        ctx.beginPath();
-        ctx.moveTo(139,257);
-        ctx.lineTo(220,234);
-        ctx.lineTo(239,20);
-        ctx.lineTo(139,20);
-        ctx.closePath();
-        ctx.fill();
-      /*  
+        $.fillStyle = '#2965F1';
+        $.beginPath();
+        $.moveTo(139,257);
+        $.lineTo(220,234);
+        $.lineTo(239,20);
+        $.lineTo(139,20);
+        $.closePath();
+        $.fill();
+       
         //first part of the 3
-        ctx.fillStyle = '#ff0000';
-        ctx.beginPath();
-        ctx.moveTo(139, 82);
-        ctx.lineTo(139, 51);
-        ctx.lineTo(62, 51);
-        ctx.lineTo(64, 82);
-        ctx.closePath();
-        ctx.fill();
-*/
+        $.fillStyle = '#EBEBEB';
+        $.beginPath();
+        $.moveTo(139, 82);
+        $.lineTo(139, 51);
+        $.lineTo(62, 51);
+        $.lineTo(64, 82);
+        $.closePath();
+        $.fill();
 
-/*  
         //second part of the 3
-        ctx.fillStyle = '#ff0000';
-        ctx.beginPath();
-        ctx.moveTo(139, 144);
-        ctx.lineTo(139, 113);
-        ctx.lineTo(67, 113);
-        ctx.lineTo(70, 144);
-        ctx.closePath();
-        ctx.fill();
-*/
+        $.beginPath();
+        $.moveTo(139, 144);
+        $.lineTo(139, 113);
+        $.lineTo(67, 113);
+        $.lineTo(70, 144);
+        $.closePath();
+        $.fill();
+
 
         //first half of the five
-        ctx.fillStyle = '#EBEBEB';
+        /*
+        $.beginPath();
+        $.moveTo(139,113);
+        $.lineTo(98,113);
+        $.lineTo(96,82);
+        $.lineTo(139,82);
+        $.lineTo(139,51);
+        $.lineTo(62,51);
+        $.lineTo(70,144);
+        $.lineTo(139,144);
+        $.closePath();
+        $.fill();
+        */
 
-        ctx.beginPath();
-        ctx.moveTo(139,113);
-        ctx.lineTo(98,113);
-        ctx.lineTo(96,82);
-        ctx.lineTo(139,82);
-        ctx.lineTo(139,51);
-        ctx.lineTo(62,51);
-        ctx.lineTo(70,144);
-        ctx.lineTo(139,144);
-        ctx.closePath();
-        ctx.fill();
-        
-
-        //other cut of first half
-        ctx.beginPath();
-        ctx.moveTo(139,193);
-        ctx.lineTo(105,184);
-        ctx.lineTo(103,159);
-        ctx.lineTo(72,159);
-        ctx.lineTo(76,207);
-        ctx.lineTo(139,225);
-        ctx.closePath();
-        ctx.fill();
+        //third cut of first half
+        $.beginPath();
+        $.moveTo(139,193);
+        $.lineTo(105,184);
+        $.lineTo(103,159);
+        $.lineTo(72,159);
+        $.lineTo(76,207);
+        $.lineTo(139,225);
+        $.closePath();
+        $.fill();
 
         //second half of the five
-        ctx.fillStyle = '#FFFFFF';
-        ctx.beginPath();
-        ctx.moveTo(139,113);
-        ctx.lineTo(139,144);
-        ctx.lineTo(177,144);
-        ctx.lineTo(173,184);
-        ctx.lineTo(139,193);
-        ctx.lineTo(139,225);
-        ctx.lineTo(202,207);
-        ctx.lineTo(210,113);
-        ctx.closePath();
-        ctx.fill();
+        $.fillStyle = '#FFFFFF';
+        $.beginPath();
+        $.moveTo(139,113);
+        $.lineTo(139,144);
+        $.lineTo(177,144);
+        $.lineTo(173,184);
+        $.lineTo(139,193);
+        $.lineTo(139,225);
+        $.lineTo(202,207);
+        $.lineTo(210,113);
+        $.closePath();
+        $.fill();
 
         //other cut of second half
-        ctx.beginPath();
-        ctx.moveTo(139,51);
-        ctx.lineTo(139,82);
-        ctx.lineTo(213,82);
-        ctx.lineTo(216,51);
-        ctx.closePath();
-        ctx.fill();
+        $.beginPath();
+        $.moveTo(139,51);
+        $.lineTo(139,82);
+        $.lineTo(182, 82);
+        $.lineTo(179, 113);
+        $.lineTo(210, 113);
+        $.lineTo(213,82);
+        $.lineTo(216,51);
+        $.closePath();
+        $.fill();
     }
 
 
