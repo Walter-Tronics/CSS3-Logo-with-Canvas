@@ -45,7 +45,7 @@ window.onload=()=>{
         //scaling the canvas
         $.scale(factorValue, factorValue);
         //Drawing the text
-        $.fillText("CSS", 70,60);
+        $.fillText("CSS", 75,60);
         $
         $.translate(0, offsetY);
 
@@ -123,29 +123,23 @@ window.onload=()=>{
 
         //second half of the five
         $.fillStyle = '#FFFFFF';
+
         $.beginPath();
-        $.moveTo(139,113);
+        $.moveTo(139,51);
+        $.lineTo(139,82);
+        $.lineTo(182, 82);
+        $.lineTo(179, 113);
+        $.lineTo(139,113);
         $.lineTo(139,144);
         $.lineTo(177,144);
         $.lineTo(173,184);
         $.lineTo(139,193);
         $.lineTo(139,225);
         $.lineTo(202,207);
-        $.lineTo(210,113);
-        $.closePath();
-        $.fill();
-
-        //other cut of second half
-        $.beginPath();
-        $.moveTo(139,51);
-        $.lineTo(139,82);
-        $.lineTo(182, 82);
-        $.lineTo(179, 113);
-        $.lineTo(210, 113);
-        $.lineTo(213,82);
         $.lineTo(216,51);
         $.closePath();
         $.fill();
+
     }
 
 
