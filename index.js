@@ -78,19 +78,19 @@ window.onload=()=>{
         //first part of the 3
         $.fillStyle = '#EBEBEB';
         $.beginPath();
-        $.moveTo(139, 82);
-        $.lineTo(139, 51);
-        $.lineTo(62, 51);
-        $.lineTo(64, 82);
+        $.moveTo(139,82);
+        $.lineTo(139,51);
+        $.lineTo(62,51);
+        $.lineTo(64,82);
         $.closePath();
         $.fill();
 
         //second part of the 3
         $.beginPath();
-        $.moveTo(139, 144);
-        $.lineTo(139, 113);
-        $.lineTo(67, 113);
-        $.lineTo(70, 144);
+        $.moveTo(139,144);
+        $.lineTo(139,113);
+        $.lineTo(98,113);
+        $.lineTo(101,144);
         $.closePath();
         $.fill();
 
@@ -127,8 +127,8 @@ window.onload=()=>{
         $.beginPath();
         $.moveTo(139,51);
         $.lineTo(139,82);
-        $.lineTo(182, 82);
-        $.lineTo(179, 113);
+        $.lineTo(182,82);
+        $.lineTo(179,113);
         $.lineTo(139,113);
         $.lineTo(139,144);
         $.lineTo(177,144);
