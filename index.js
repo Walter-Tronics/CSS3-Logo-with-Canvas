@@ -94,22 +94,6 @@ window.onload=()=>{
         $.closePath();
         $.fill();
 
-
-        //first half of the five
-        /*
-        $.beginPath();
-        $.moveTo(139,113);
-        $.lineTo(98,113);
-        $.lineTo(96,82);
-        $.lineTo(139,82);
-        $.lineTo(139,51);
-        $.lineTo(62,51);
-        $.lineTo(70,144);
-        $.lineTo(139,144);
-        $.closePath();
-        $.fill();
-        */
-
         //third cut of first half
         $.beginPath();
         $.moveTo(139,193);
@@ -123,7 +107,6 @@ window.onload=()=>{
 
         //second half of the five
         $.fillStyle = '#FFFFFF';
-
         $.beginPath();
         $.moveTo(139,51);
         $.lineTo(139,82);
