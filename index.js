@@ -74,9 +74,33 @@ window.onload=()=>{
         ctx.lineTo(139,20);
         ctx.closePath();
         ctx.fill();
+      /*  
+        //first part of the 3
+        ctx.fillStyle = '#ff0000';
+        ctx.beginPath();
+        ctx.moveTo(139, 82);
+        ctx.lineTo(139, 51);
+        ctx.lineTo(62, 51);
+        ctx.lineTo(64, 82);
+        ctx.closePath();
+        ctx.fill();
+*/
+
+/*  
+        //second part of the 3
+        ctx.fillStyle = '#ff0000';
+        ctx.beginPath();
+        ctx.moveTo(139, 144);
+        ctx.lineTo(139, 113);
+        ctx.lineTo(67, 113);
+        ctx.lineTo(70, 144);
+        ctx.closePath();
+        ctx.fill();
+*/
 
         //first half of the five
         ctx.fillStyle = '#EBEBEB';
+
         ctx.beginPath();
         ctx.moveTo(139,113);
         ctx.lineTo(98,113);
@@ -88,6 +112,7 @@ window.onload=()=>{
         ctx.lineTo(139,144);
         ctx.closePath();
         ctx.fill();
+        
 
         //other cut of first half
         ctx.beginPath();
