@@ -89,7 +89,7 @@ window.onload=()=>{
         $.beginPath();
         $.moveTo(139,144);
         $.lineTo(139,113);
-        $.lineTo(98,113);
+        $.lineTo(99,113);
         $.lineTo(101,144);
         $.closePath();
         $.fill();
