@@ -9,6 +9,7 @@ body{
     -moz-display: grid;
     -o-display: grid;
     place-items: center;
+    background-color: #5fabe280;
 }
 article {
     display:block; 
